@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+ 
+    <div class="container delete">
+    <form action="/delete" method="get">
+        <div class="form-group">
+            <label  for="deletedTitle">Title</label> 
+            <input type="text" class="form-control" name="deletedTitle" placeholder="Enter your Title" autofocus required>
+        </div>
+        <button type="submit" class="btn btn-light">Delete</button>
+    </form>
+    </div>
+     
+    
+<%- include('partials/footer.ejs') %>

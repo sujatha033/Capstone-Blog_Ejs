@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<% for(var i=0; i<length; i++){ %>
+    <% JSON.stringify(posts) %>
+       <div class="postStyle">  
+        <% if(locals.posts[i].title === deletTitle) {%>
+            <%= posts.splice(i,1) %>
+            <% }else { %>
+                <h1>No</h1>
+            <%}%> 
+    <% } %>
+    
+        
+<%- include('partials/footer.ejs') %>

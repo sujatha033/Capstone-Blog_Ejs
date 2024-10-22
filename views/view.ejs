@@ -1,0 +1,14 @@
+<%-include("partials/header.ejs") %>
+
+<div class="container view">
+    <h2 class="vh2">Your Blogs:</h2>
+    <% for(var i=0; i<length; i++){ %>
+        <% JSON.stringify(posts) %>
+           <div class="postStyle">  
+                <h4>Title <%= i+1 %> : <%= posts[i].title %></h4>
+                <p><strong>       <%= posts[i].content %></strong></p>
+           </div>
+    <% } %>
+</div>
+
+<%- include('partials/footer.ejs') %>
